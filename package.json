@@ -1,0 +1,22 @@
+{
+  "name": "dockerfile-generator",
+  "version": "0.1.0",
+  "description": "Generates Dockerfile from READMEs",
+  "main": "src/app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nate West",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.9",
+    "webpack": "^1.12.14"
+  },
+  "dependencies": {
+    "js-yaml": "^3.5.5",
+    "lodash": "^4.6.1",
+    "nunjucks": "^2.4.1"
+  }
+}

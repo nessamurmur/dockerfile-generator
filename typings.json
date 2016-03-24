@@ -1,0 +1,11 @@
+{
+  "ambientDependencies": {
+    "js-yaml": "github:DefinitelyTyped/DefinitelyTyped/js-yaml/js-yaml.d.ts#14fe4313f4a1cf69add3505a2ab1dbc690dc2116",
+    "lodash": "github:DefinitelyTyped/DefinitelyTyped/lodash/lodash-3.10.d.ts#790ebd33d883a3a64e3f53af0e64de65acf81ebc",
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#315f5612ceb4de6f1f81f8cf49878084ea3f364a",
+    "nunjucks": "github:DefinitelyTyped/DefinitelyTyped/nunjucks/nunjucks.d.ts#319e7ee11151671250cc3704f06629cf19c81389"
+  },
+  "dependencies": {
+    "bluebird": "github:typed-typings/npm-bluebird#524d5cc66654fe7c8dcbccf90faeaa70588853a0"
+  }
+}

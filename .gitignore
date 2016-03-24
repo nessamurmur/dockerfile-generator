@@ -1,0 +1,6 @@
+node_modules
+typings
+target
+service.yml
+Dockerfile
+docker-compose.yml

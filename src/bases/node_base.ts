@@ -1,6 +1,9 @@
 import * as _ from "lodash";
+import { getServiceName } from "./base_utils";
 
-const generateNodeContext = (context) =>
-  _.merge({}, context);
+export const generateNodeContext = (config) => {
+  let serviceName = getServiceName(config);
+  let defaults = { serviceName: serviceName };
 
-export default generateNodeContext;
+  return _.merge(defaults, config);
+};

@@ -4,6 +4,7 @@
   "description": "Generates Dockerfile from READMEs",
   "main": "src/app.ts",
   "scripts": {
+    "build": "tsc --outDir target",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nate West",

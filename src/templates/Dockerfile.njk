@@ -1,0 +1,9 @@
+FROM {{ image }}
+
+WORKDIR /code
+
+COPY . /code
+
+RUN npm install
+
+CMD ["node", "src"]

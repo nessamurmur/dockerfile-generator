@@ -10,8 +10,18 @@ const loadServiceConfig = (fileBuffer: Buffer) => yaml.load(fileBuffer.toString(
 
 const generateContext = (config) => generateNodeContext(config);
 
-const renderTemplates = (context) =>
-  console.log(nunjucks.render("templates/README.md.njk", context));
+const templatePathFor = (path) => __dirname + "/templates/" + path + ".njk";
+
+const generateFile = (fileName, context) => {
+  let fileContent =   nunjucks.render(templatePathFor(fileName), context);
+  fs.writeFile(fileName, fileContent);
+};
+
+const renderTemplates = (context) => {
+  generateFile("docker-compose.yml", context);
+  generateFile("Dockerfile", context);
+  console.log(nunjucks.render(templatePathFor("README.md"), context));
+};
 
 pReadFile("service.yml")
   .then(loadServiceConfig)
